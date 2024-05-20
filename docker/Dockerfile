@@ -23,9 +23,9 @@ RUN curl -sS https://getcomposer.org/installer | php -- \
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Set working directory
-WORKDIR /crm
+WORKDIR /avanmall
 
-RUN chown -R www-data:www-data /crm
+RUN chown -R www-data:www-data /avanmall
 
 EXPOSE 9000
 CMD ["php-fpm"]
